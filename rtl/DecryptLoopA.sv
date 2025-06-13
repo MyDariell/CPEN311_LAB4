@@ -1,6 +1,6 @@
-module RamInitializer (clock, address, wren, data, finished, reset);
+module DecryptLoopA (clock, address, wren, data, finished, reset,start);
 
-    input clock, reset;
+    input clock, reset,start;
     output reg wren = 1'b0; 
     output reg [7:0] address = 1'b0; 
     output reg [7:0] data    = 1'b0; 
@@ -9,14 +9,14 @@ module RamInitializer (clock, address, wren, data, finished, reset);
     reg [7:0] next_address = 1'b0; 
 
     always_ff @( posedge clock ) begin 
-        if (reset) begin
+        if (reset || finished) begin
             wren <= 0; 
             data <= 0; 
             address <= 0; 
             finished <= 0;
         end
         else begin
-            if (!finished) begin
+            if (!finished && start) begin
                 wren <= 1'b1;
                 address <= next_address;
                 data <= next_address;

@@ -1,5 +1,5 @@
 `default_nettype none
-module DecryptLoop2 (clk, start, data_in, secret_key, wren, data_out, finish, address);
+module DecryptLoopB (clk, start, data_in, secret_key, wren, data_out, finish, address);
     input   wire clk;
     input   wire start;
     input   wire [7:0]  data_in; 

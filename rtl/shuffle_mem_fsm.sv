@@ -56,7 +56,7 @@ module shuffle_mem_fsm (
     always_ff @(posedge clk)
     begin
         case (state)
-            IDLE:           if (!check_new_val & state)   state <= READ_Si;
+            IDLE:           if (!check_new_val & start)   state <= READ_Si;
             READ_Si:        state <= LOAD_Si;
             LOAD_Si:        state <= LOAD_j;
             LOAD_j:         state <= READ_Sj;
