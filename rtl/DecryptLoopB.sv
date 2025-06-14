@@ -15,7 +15,7 @@ module DecryptLoopB (clk, start, data_in, secret_key, wren, data_out, finish, ad
     wire en_new_value; 
     wire en_si;
     wire en_sj;
-	 wire en_j; 
+	wire en_j; 
     wire sel_data; 
     wire sel_address; 
     wire check_new_val; 
@@ -55,19 +55,29 @@ module DecryptLoopB (clk, start, data_in, secret_key, wren, data_out, finish, ad
     );
 
     
-    //Load S[i] value from RAM 
-    always_ff @ (posedge clk) begin
-        if (en_si) begin
-            si <= data_in;   
-        end
-    end
+    // //Load S[i] value from RAM 
+    // always_ff @ (posedge clk) begin
+    //     if (en_si) begin
+    //         si <= data_in;   
+    //     end
+    // end
 
-    //Load S[j] value from RAM 
-    always_ff @ (posedge clk) begin
-        if (en_sj) begin
-            sj <= data_in;   
-        end
-    end
+    // //Load S[j] value from RAM 
+    // always_ff @ (posedge clk) begin
+    //     if (en_sj) begin
+    //         sj <= data_in;   
+    //     end
+    // end
+    
+    //Module to load si and sj
+    mem_reg u_mem_reg (
+        .clk        (clk),
+        .en_si      (en_si),
+        .en_sj      (en_sj),
+        .data_in    (data_in),
+        .si         (si),
+        .sj         (sj)
+    );
 
     //Load j 
     always_ff @(posedge clk) begin
