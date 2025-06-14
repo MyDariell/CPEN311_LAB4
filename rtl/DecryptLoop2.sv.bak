@@ -1,0 +1,103 @@
+module DecryptLoop2 (clk, start, data_in, secret_key, wren, data_out, finish, address);
+    input   wire clk;
+    input   wire start;
+    input   wire [7:0]  data_in; 
+    input   wire [23:0] secret_key;
+    output  wire wren;
+    output  wire [7:0] data_out;
+    output  wire finish;
+    output  wire [7:0] address; 
+
+    wire [7:0] secret_key_value; 
+    wire [7:0] i_val; 
+    wire [7:0] j_val; 
+    wire en_new_value; 
+    wire en_si;
+    wire en_sj;
+    wire sel_data; 
+    wire sel_address; 
+    wire check_new_val; 
+    wire [7:0] si;
+    wire [7:0] sj;
+    wire [7:0] next_j_val;
+
+//Module Instantiations 
+
+    SecretKeyController u_secret_key_ctrl (
+        .input_i          (i_value),
+        .secret_key       (secret_key),
+        .secret_key_value (secret_key_value)
+    );
+
+    counter u_increment_i (
+        .clk    (clk),
+        .en     (en_new_value),
+        .reset  (),
+        //outputs
+        .count (i_value)
+    ); 
+
+    shuffle_mem_fsm u_shuffle_mem_fsm (
+        .clk            (clk),
+        .check_new_val  (check_new_val),
+        .start          (start),
+        //outputs
+        .en_new_value   (en_new_value),
+        .en_si          (en_si),
+        .en_sj          (en_sj),
+        .en_j           (en_j),
+        .wren           (wren),
+        .sel_data       (sel_data),
+        .sel_address    (sel_address),
+        .finish         (finish),
+    );
+
+    
+    //Load S[i] value from RAM 
+    always_ff @ (posedge clk) begin
+        if (en_si) begin
+            si <= data_in;   
+        end
+    end
+
+    //Load S[j] value from RAM 
+    always_ff @ (posedge clk) begin
+        if (en_sj) begin
+            sj <= data_in;   
+        end
+    end
+
+    //Load j 
+    always_ff (posedge clk) begin
+        if (en_j) begin
+            j_val <= next_j_val; 
+        end
+    end
+
+    assign check_new_val = (i_value == 8'd255); //check whether i has reached 255 
+
+    //MUX to assign data to be written 
+    assign data_out = (sel_data) ? si : sj; 
+    
+    //Compute j 
+    assign next_j_val = j_val + si + secret_key_value; //j = (j + s[i] + secret_key[i mod keylength] ) mod 256
+    assign address = (sel_address) ? j_val : i_val; 
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+endmodule 

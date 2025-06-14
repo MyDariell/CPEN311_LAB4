@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun May 29 17:39:38 2016
-Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Full Version
+Analysis & Synthesis Status : Successful - Fri Jun 13 21:09:39 2025
+Quartus Prime Version : 16.1.2 Build 203 01/18/2017 SJ Lite Edition
 Revision Name : rc4
 Top-level Entity Name : ksa
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
+Total registers : 3242
 Total pins : 67
 Total virtual pins : 0
-Total block memory bits : 0
+Total block memory bits : 27,264
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

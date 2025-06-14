@@ -2,4 +2,276 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : 8.646
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 8.696
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.308
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 5.082
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 5.492
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 5.566
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 29.030
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.590
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 12.726
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 12.814
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 13.163
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.882
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.133
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 19.391
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 19.401
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 19.409
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : 8.684
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 8.882
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.280
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 5.050
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 5.480
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 5.544
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 29.161
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.537
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 12.822
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 12.898
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 13.219
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.861
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.110
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 19.376
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 19.393
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 19.396
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : 9.539
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 11.999
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.035
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 6.662
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 6.992
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 7.029
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 30.259
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.238
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 11.753
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 11.794
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 11.979
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.479
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 14.781
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 19.629
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 19.642
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 19.644
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : 9.662
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 12.605
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.023
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.164
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 6.715
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 7.009
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 7.039
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 30.601
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 11.774
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 11.810
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 11.971
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.435
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 14.763
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DecryptLoopB:u_DecryptLoopB|shuffle_mem_fsm:u_shuffle_mem_fsm|state[0]'
+Slack : 19.629
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DecryptLoopA:u_DecryptLoopA|finished'
+Slack : 19.646
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DecryptLoopC:U_DecryptLoopC|comp_mem_fsm:u_comp_mem_fsm|state[0]'
+Slack : 19.646
+TNS   : 0.000
+
 ------------------------------------------------------------

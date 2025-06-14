@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at shuffle_mem_fsm.sv(27): object "finished" differs only in case from object "FINISHED" in the same scope File: C:/Users/dari3/OneDrive - UBC/CPEN311/Projects/labs/Lab4_template_de1soc/rtl/shuffle_mem_fsm.sv Line: 27
+Info (10281): Verilog HDL Declaration information at comp_mem_fsm.sv(34): object "finished" differs only in case from object "FINISHED" in the same scope File: C:/Users/dari3/OneDrive - UBC/CPEN311/Projects/labs/Lab4_template_de1soc/rtl/comp_mem_fsm.sv Line: 34
